@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Header, NavWrapper, Nav, Title, Link } from './SharedLayout.styled';
+import { Header, NavWrapper, Nav, Title, Link, Footer, FooterLink, } from './SharedLayout.styled';
 import { Container } from 'components/App/App.styled';
 import { SiThemoviedatabase } from 'react-icons/si';
 import { IconContext } from 'react-icons';
@@ -34,6 +34,11 @@ export default function SharedLayout() {
       <Suspense fallback={<Loading />}>
         <Outlet />
       </Suspense>
+       <Footer>
+        <Container>
+          <p>&#169; 2023 | All Rights Reserved | Developed with 💙💛 by <FooterLink href="https://www.linkedin.com/in/inha-yurchenko-64b110150/" target="_blank" rel="noreferrer">Inha Yurchenko</FooterLink></p>
+        </Container>
+      </Footer>
     </>
   );
 }

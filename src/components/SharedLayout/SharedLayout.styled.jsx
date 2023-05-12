@@ -41,3 +41,17 @@ export const Link = styled(NavLink)`
     color: orangered;
   }
 `;
+
+export const Footer = styled.footer`
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  background-color: rgb(126, 194, 191);
+`;
+
+export const FooterLink = styled.a`
+  font-weight: 600;
+  background: linear-gradient(90deg, hsl(277, 56%, 68%) 0%, hsl(203, 71%, 60%) 100%);
+  -webkit-background-clip: text;
+  color: white;
+`;
